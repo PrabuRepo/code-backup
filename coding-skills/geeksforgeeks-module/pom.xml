@@ -1,0 +1,53 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.practice.root</groupId>
+		<artifactId>coding-skills</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<!-- GeeksForGeeks: This module follows geeksforgeeks web site problem category, 
+		concepts & topic wise problems etc. Add problem any web sites, but stick 
+		with geeksforgeeks categories. -->
+	<groupId>com.practice.root.geeksforgeeks</groupId>
+	<artifactId>geeksforgeeks-module</artifactId>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.practice.root.common</groupId>
+			<artifactId>common-module</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>jaxws-maven-plugin</artifactId>
+				<version>1.9</version>
+				<executions>
+					<execution>
+						<goals>
+							<goal>wsimport</goal>
+						</goals>
+						<phase>generate-sources</phase>
+					</execution>
+				</executions>
+				<configuration>
+
+					<!-- Keep generated files -->
+					<keep>true</keep>
+					<!-- Package name -->
+					<!-- <packageName>org.example.service.skeleton</packageName> -->
+					<!-- generated source files destination -->
+					<sourceDestDir>src/main/java</sourceDestDir>
+					<wsdlDirectory>${basedir}/src/main/resources/wsdl</wsdlDirectory>
+					<!-- <wsdlUrls> <wsdlUrl>https://test-idcws-jja.icmobil.com/idcheckws/idcheckws.asmx?wsdl</wsdlUrl> 
+						</wsdlUrls> -->
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>

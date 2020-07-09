@@ -1,0 +1,4 @@
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+abcdefghijklmnopqrstuvwxyz
+FileOutputStream(8 bits) is used to write the data into external file.
+FileInputStream(8 bits) is used to read the data from file

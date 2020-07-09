@@ -1,0 +1,28 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.practice.root</groupId>
+		<artifactId>coding-skills</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>com.practice.root.topinterview</groupId>
+	<artifactId>top-interview-questions</artifactId>
+
+	<properties>
+		<!-- JDK Version -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+	<!-- My Top Interview Questions: This module contains top interview questions 
+		collected from many web sites. Keep this module as simple as possible and 
+		try to cover all the DS & Alg's -->
+	<dependencies>
+		<dependency>
+			<groupId>com.practice.root.common</groupId>
+			<artifactId>common-module</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+</project>
