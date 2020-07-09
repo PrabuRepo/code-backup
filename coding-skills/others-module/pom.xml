@@ -9,13 +9,14 @@
 	</parent>
 	<groupId>com.practice.root.others</groupId>
 	<artifactId>others-module</artifactId>
-<!-- This module contains back up files, some random category problems etc -->
+	<!-- This module contains back up files, some random category problems etc -->
 	<dependencies>
 		<dependency>
 			<groupId>com.fasterxml.jackson.core</groupId>
 			<artifactId>jackson-databind</artifactId>
-			<version>2.6.3</version>
+			<version>2.11.0</version>
 		</dependency>
+
 		<dependency>
 			<groupId>com.googlecode.json-simple</groupId>
 			<artifactId>json-simple</artifactId>

@@ -1,13 +1,14 @@
 package com.backup;
 
+import java.util.ArrayList;
+
 public class Test {
 
 	public static void main(String[] args) {
 		
-		syso
 	}
 	
-	public void static merge(ArrayList<Integer> a, ArrayList<Integer> b) {
+	public  static void merge(ArrayList<Integer> a, ArrayList<Integer> b) {
 	    if(a.size() == 0 && b.size() == 0) return;
 	    int i=0, j=0;
 	    while(i < a.size() && j < b.size()){
